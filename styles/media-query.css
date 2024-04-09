@@ -1,1 +1,40 @@
-/* Em breve */
+@media (min-width: 280px) and (max-width: 480px) {
+    .wrapper{
+        justify-content: flex-start;
+        padding-top: 2%;
+    }
+    .form{
+        width: 95vw;
+    }
+    .card-container {
+        background-color: transparent;
+        width: 100vw;
+        height: 60vh;
+    }
+    .pokemon-image_container{
+        border: 6px solid #080C20;
+        border-bottom: 0;
+        height: 50%;
+        margin-top: 0;
+    }
+    .pokemon-description{
+        padding: 5px;
+        height: auto;
+        border: 6px solid #080C20;
+        border-top: 0;
+        padding-bottom: 3.5%;
+    }
+    .pokemon-name_and_type {
+        align-items: center;
+        height: 25%;
+    }
+    .pokemon-base_experience>h3 {
+        font-size: .9em;
+    }
+    .pokemon-stats {
+        margin-top: 0;
+    }
+    .pokemon-stats>.stats-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}

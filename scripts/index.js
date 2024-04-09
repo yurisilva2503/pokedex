@@ -50,21 +50,19 @@ function removeSpacesandToLowerCase(text) {
 const pokemon = async (name) => {
   try {
     let data;
-    // Verificar se os dados já estão em cache
     const cachedData = localStorage.getItem(name);
     if (cachedData) {
       data = JSON.parse(cachedData);
     } else {
-      // Se não estiver em cache, fazer uma solicitação à API
+      console.log(name)
       const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
       data = await response.json();
-      
-      // Armazenar os dados em cache
       localStorage.setItem(name, JSON.stringify(data));
     }
+
     //Inserindo os dados no HTML
     //Pokemon Image
-    pokemon_image.style.backgroundImage = `url('https://raw.githubusercontent.com/yurisilva2503/pokedex/main/images/pokemons/poke_${data.id}.gif')`;
+    pokemon_image.style.backgroundImage = `url('https://raw.githubusercontent.com/wellrccity/pokedex-html-js/master/assets/img/pokemons/poke_${data.id}.gif`;
 
     //Pokemon Number
     pokemon_number.textContent = data.id;
