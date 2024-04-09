@@ -1,11 +1,13 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-:root{
+:root {
     --bgCardContainer: #333;
     --h1TextColor: #333;
     --h2BgColor: #333;
@@ -15,13 +17,13 @@
     --pokemonDescription: #e7e7e7;
 }
 
-body{
+body {
     background-image: url('../images/background.png');
     background-size: cover;
     background-position: center;
 }
 
-.wrapper{
+.wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,14 +33,14 @@ body{
     gap: 10px;
 }
 
-.form{
+.form {
     width: 30%;
     display: flex;
     justify-content: center;
     gap: 5px;
 }
 
-.form > input{
+.form>input {
     background-color: #333;
     color: #fff;
     border: none;
@@ -48,11 +50,11 @@ body{
     font-size: .9em;
 }
 
-.form > input:focus{
+.form>input:focus {
     outline: none;
 }
 
-.form > button{
+.form>button {
     background-color: #333;
     color: #fff;
     border: none;
@@ -61,11 +63,11 @@ body{
     cursor: pointer;
 }
 
-.form > button:hover{
+.form>button:hover {
     background-color: #444;
 }
 
-.card-container{
+.card-container {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -76,7 +78,7 @@ body{
     width: 30%;
 }
 
-.pokemon-image_container{
+.pokemon-image_container {
     width: 95%;
     height: 60%;
     background-color: var(--pokemonImgContainer);
@@ -85,7 +87,7 @@ body{
     position: relative;
 }
 
-.pokemon-image{
+.pokemon-image {
     width: 100%;
     height: 100%;
     background-image: url('../images/pokemons/poke_1.gif');
@@ -94,7 +96,7 @@ body{
     background-position: center;
 }
 
-.pokemon-number{
+.pokemon-number {
     position: absolute;
     top: 0;
     left: 0;
@@ -104,12 +106,12 @@ body{
     color: #fff;
 }
 
-.pokemon-number > p{
+.pokemon-number>p {
     font-size: 1.1em;
-    font-weight: 600;    
+    font-weight: 600;
 }
 
-.pokemon-description{
+.pokemon-description {
     background-color: var(--pokemonDescription);
     width: 95%;
     height: 35%;
@@ -119,7 +121,7 @@ body{
     overflow: hidden;
 }
 
-.pokemon-name_and_type{
+.pokemon-name_and_type {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -129,18 +131,18 @@ body{
     gap: 10px;
 }
 
-.pokemon-name_and_type > .type{
+.pokemon-name_and_type>.type {
     display: flex;
     gap: 5px;
 }
 
-.pokemon-name_and_type > .name > h1{
+.pokemon-name_and_type>.name>h1 {
     color: var(--h1TextColor);
     font-size: 1.55em;
     font-weight: bold;
 }
 
-.pokemon-name_and_type > .type > h2{
+.pokemon-name_and_type>.type>h2 {
     font-size: 1em;
     font-weight: 700;
     background-color: var(--h2BgColor);
@@ -149,24 +151,24 @@ body{
     border-radius: 30px;
 }
 
-.pokemon-base_experience{
+.pokemon-base_experience {
     display: flex;
     align-items: flex-start;
     height: 15%;
 }
 
-.pokemon-base_experience > h3{
+.pokemon-base_experience>h3 {
     font-size: .95em;
     font-weight: 400;
     color: var(--h3TextColor);
 }
 
-.pokemon-stats{
+.pokemon-stats {
     width: 100%;
     margin-top: 2.5%;
 }
 
-.pokemon-stats > .stats-container{
+.pokemon-stats>.stats-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
@@ -174,7 +176,7 @@ body{
     width: 100%;
 }
 
-.stat{
+.stat {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,8 +190,8 @@ body{
 
 .material-symbols-outlined {
     font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
 }
