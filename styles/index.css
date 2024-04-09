@@ -90,7 +90,7 @@ body {
 .pokemon-image {
     width: 100%;
     height: 100%;
-    background-image: url('../images/pokemons/poke_1.gif');
+    background-image: url('https://raw.githubusercontent.com/yurisilva2503/pokedex/main/images/pokemons/poke_1.gif');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

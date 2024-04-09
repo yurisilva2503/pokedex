@@ -54,7 +54,7 @@ const pokemon = async (name) => {
     console.log(data);
 
     //Pokemon Image
-    pokemon_image.style.backgroundImage = `url('../images/pokemons/poke_${data.id}.gif')`;
+    pokemon_image.style.backgroundImage = `url('https://raw.githubusercontent.com/yurisilva2503/pokedex/main/images/pokemons/poke_${data.id}.gif')`;
 
     //Pokemon Number
     pokemon_number.textContent = data.id;
