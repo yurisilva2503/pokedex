@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link rel="icon" href="./images/icon.png" type="svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form class="form" id="form">
+            <input type="text" placeholder="Nome (Inglês) ou número do Pokémon " id="pokemon-input">
+            <button type="submit" class="material-symbols-outlined" id="search">search</button>
+        </form>
+        <div class="card-container">
+            <div class="pokemon-image_container">
+                <div class="pokemon-image"></div>
+                <div class="pokemon-number">
+                    <p>001</p>
+                </div>
+            </div>
+            <div class="pokemon-description">
+                <div class="pokemon-name_and_type">
+                    <div class="name">
+                        <h1>Bulbasaur</h1>
+                    </div>
+                    <div class="type">
+                        <h2 class="type_1">Grass</h2>
+                        <h2 class="type_2">Poison</h2>
+                    </div>
+                </div>
+                <div class="pokemon-base_experience">
+                    <h3>Base experience: 64</h3>
+                </div>
+                <div class="pokemon-stats">
+                    <div class="stats-container">
+                        <div class="stat" id="hp">
+                            <h4>HP</h4>
+                            <p>45</p>
+                        </div>
+                        <div class="stat" id="attack">
+                            <h4>Attack</h4>
+                            <p>49</p>
+                        </div>
+                        <div class="stat" id="defense">
+                            <h4>Defense</h4>
+                            <p>49</p>
+                        </div>
+                        <div class="stat" id="sattack">
+                            <span class="material-symbols-outlined">trending_up</span>
+                            <h4>SAttack</h4>
+                            <p>65</p>
+                        </div>
+                        <div class="stat" id="sdefense">
+                            <span class="material-symbols-outlined">shield</span>
+                            <h4>SDefense</h4>
+                            <p>65</p>
+                        </div>
+                        <div class="stat" id="speed">
+                            <span class="material-symbols-outlined">speed</span>
+                            <h4>Speed</h4>
+                            <p>45</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
