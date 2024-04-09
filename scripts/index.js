@@ -54,7 +54,6 @@ const pokemon = async (name) => {
     if (cachedData) {
       data = JSON.parse(cachedData);
     } else {
-      console.log(name)
       const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
       data = await response.json();
       localStorage.setItem(name, JSON.stringify(data));
