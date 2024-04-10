@@ -18,7 +18,7 @@
 }
 
 body { 
-    background-image: url(../images/background.png);
+    background-image: url(../images/background-2.jpg);
     background-size: cover;
     background-position: bottom;
 }
@@ -126,7 +126,7 @@ button:hover{
     background-color: var(--pokemonDescription);
     width: 95%;
     height: 35%;
-    padding: 15px;
+    padding: 10px;
     border-radius: 0px 0px 5px 5px;
     margin-bottom: 2.5%;
     overflow: hidden;
@@ -170,7 +170,7 @@ button:hover{
 
 .pokemon-base_experience>h3 {
     font-size: .95em;
-    font-weight: 400;
+    font-weight: bold;
     color: var(--h3TextColor);
 }
 

@@ -1,4 +1,51 @@
-@media (min-width: 280px) and (max-width: 480px) {
+@media (min-width: 280px) and (max-width: 290px) {
+    .wrapper{
+        justify-content: flex-start;
+        padding-top: 2%;
+    }
+    .form{
+        width: 95vw;
+    }
+    .card-container {
+        background-color: transparent;
+        width: 100vw;
+        height: 60vh;
+    }
+    .pokemon-image_container{
+        border: 6px solid #080C20;
+        border-bottom: 0;
+        height: 50%;
+        margin-top: 0;
+    }
+    .pokemon-description{
+        padding: 5px;
+        height: auto;
+        border: 6px solid #080C20;
+        border-top: 0;
+        padding-bottom: 7%;
+    }
+    .pokemon-name_and_type {
+        align-items: center;
+        height: 25%;
+    }
+    .pokemon-name_and_type>.name>h1{
+        font-size: 1.2em;
+    }
+    .pokemon-name_and_type>.type>h2{
+        font-size: .9em;
+    }
+    .pokemon-base_experience>h3 {
+        font-size: .8em;
+    }
+    .pokemon-stats {
+        margin-top: 0;
+    }
+    .pokemon-stats>.stats-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 290px) and (max-width: 480px) {
     .wrapper{
         justify-content: flex-start;
         padding-top: 2%;
@@ -36,5 +83,154 @@
     }
     .pokemon-stats>.stats-container{
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .wrapper{
+        justify-content: flex-start;
+        padding-top: 2%;
+    }
+    .form{
+        width: 95vw;
+    }
+    .card-container {
+        background-color: transparent;
+        width: 100vw;
+        height: 60vh;
+    }
+    .pokemon-image_container{
+        border: 8px solid #080C20;
+        border-bottom: 0;
+        height: 50%;
+        margin-top: 0;
+    }
+    .controls{
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        width: 100%;
+    }
+    .pokemon-number {
+        top: -1px;
+        left: 5%;
+        border-radius: 0px 0px 5px 5px;
+    }
+    .pokemon-description{
+        padding: 5px;
+        height: auto;
+        border: 8px solid #080C20;
+        border-top: 0;
+        padding-bottom: 1.3%;
+    }
+    .pokemon-name_and_type {
+        align-items: center;
+        height: 30%;
+    }
+    .pokemon-name_and_type>.name>h1{
+        font-size: 1.6em;
+    }
+    .pokemon-name_and_type>.type>h2{
+        font-size: 1.3em;
+    }
+    .pokemon-base_experience{
+        height: 19%;
+    }
+    .pokemon-base_experience>h3 {
+        font-size: 1.1em;
+    }
+    .pokemon-stats {
+        margin-top: 0;
+    }
+    .pokemon-stats>.stats-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .stat{
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .wrapper{
+        justify-content: flex-start;
+        padding-top: 2%;
+    }
+    .form{
+        width: 57vw;
+    }
+    .card-container {
+        background-color: transparent;
+        width: 60vw;
+        height: 60vh;
+    }
+    .pokemon-image_container{
+        border: 6px solid #080C20;
+        border-bottom: 0;
+        height: 50%;
+        margin-top: 0;
+    }
+    .controls{
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        width: 100%;
+    }
+    .pokemon-number {
+        top: -1px;
+        left: 5%;
+        border-radius: 0px 0px 5px 5px;
+    }
+    .pokemon-description{
+        padding: 5px;
+        height: auto;
+        border: 6px solid #080C20;
+        border-top: 0;
+        padding-bottom: 1.5%;
+    }
+    .pokemon-name_and_type {
+        align-items: center;
+        height: 30%;
+    }
+    .pokemon-name_and_type>.name>h1{
+        font-size: 1.6em;
+    }
+    .pokemon-name_and_type>.type>h2{
+        font-size: 1.3em;
+    }
+    .pokemon-base_experience{
+        height: 19%;
+    }
+    .pokemon-base_experience>h3 {
+        font-size: 1.1em;
+    }
+    .pokemon-stats {
+        margin-top: 0;
+    }
+    .pokemon-stats>.stats-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .stat{
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1920px){
+    .form>input{
+        font-size: 1.2em;
+    }
+    .pokemon-number>p {
+        font-size: 1.3em;
+    }
+    .pokemon-name_and_type>.name>h1 {
+        font-size: 2em;
+    }
+    .pokemon-name_and_type>.type>h2 {
+        font-size: 1.5em;
+    }
+    .pokemon-base_experience>h3 {
+        font-size: 1.3em;
+    }
+    .stat{
+        font-size: 1.2em;
     }
 }
